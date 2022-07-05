@@ -28,6 +28,44 @@
   color: #61dafb;
 }
 
+.galleryContainer{
+  margin: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+  background-color: grey;
+}
+
+.sectionTitle{
+  text-align: center;
+}
+
+.gallery{
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: white;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.modifyQuantity {
+  padding: 0.5rem;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.modifyQuantity button{
+  margin: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  background-color: grey;
+  color: white;
+  border-radius: 0.3rem;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -1,8 +1,15 @@
-
 import './App.css';
+import NavBar from './components/NavBar'
+import ItemListContainer from './components/ItemListContainer';
+import GalleryContainer from './containers/GalleryContainer';
 
-function App() {
-  return <h1>Tex-Mex Doodles</h1>
+const App = () => {
+  return (
+    <>
+      <NavBar />
+      <GalleryContainer />
+    </>
+  );
 }
 
 export default App;
