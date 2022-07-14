@@ -28,7 +28,7 @@
   color: #61dafb;
 }
 
-.galleryContainer{
+.ItemList{
   margin: 1rem;
   border-radius: 1rem;
   display: flex;
@@ -41,7 +41,7 @@
   text-align: center;
 }
 
-.gallery{
+.item{
   margin: 1rem;
   padding: 1rem;
   border-radius: 1rem;
