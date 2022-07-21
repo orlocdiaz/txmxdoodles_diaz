@@ -1,3 +1,19 @@
+# Herramientas usadas para el proyecto hasta el momento
+
+En el proyecto se han usado las herramnientas que hemos visto en los desafíos, siendo la ultima que se incluyo el use de react-router-dom para routing y navegación.
+
+# Menu de galería
+
+En la seccion de "Gallery" en el menu podemos filtrar la galaría por imagenes relacionadas a dicha categoria (Animales, personas, divertido)
+
+# Vista a detalle
+
+Para la vista a detalle se puede utilizar la seccion de URL escribiendo /item/(un numero del 1 al 12)
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
