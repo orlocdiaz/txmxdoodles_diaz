@@ -1,19 +1,28 @@
 import React, { useEffect, useState } from 'react'
 import ItemList from '../components/ItemList'
 import fetchProducts from '../utilities/fetchProducts'
-const { products } = require ('../utilities/products')
+import { useParams } from 'react-router-dom'
+const { products } = require('../utilities/products')
 
 const ItemListContainer = () => {
   const [listProds, setList] = useState([]);
+  const { idList } = useParams();
 
   useEffect(() => {
-    fetchProducts(2000, products)
-      .then(res => setList(res))
-      .catch(err => console.log(err))
-  }, [])
+    if (idList === undefined) {
+      fetchProducts(2000, products)
+        .then(res => setList(res))
+        .catch(err => console.log(err))
+    } else {
+      fetchProducts(2000, products.filter(item => item.categoryId
+          .find(catId => { return catId === parseInt(idList) }) === parseInt(idList)))
+        .then(res => setList(res))
+        .catch(err => console.log(err))
+    }
+  }, [idList])
   return (
     <>
-      <ItemList listProps={listProds}/>
+      <ItemList listProps={listProds} />
     </>
   )
 }

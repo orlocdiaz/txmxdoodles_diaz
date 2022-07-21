@@ -1,24 +1,26 @@
 import React from 'react'
 import ItemCount from './ItemCount'
+import { Link } from 'react-router-dom'
 
-const Item = (props) => {
+const Item = ({idItem, imgLink, title, stock, price, description, artist}) => {
   return (
     <>
       <div className="item">
-        <img src={props.imgLink} width="280" height="300" alt="GalleryItem" />
-        <h5>{props.title}</h5>
+        {/* <Link to={`/item/${idItem}`} style={{textDecoration:'none', textAlign:'center'}}> */}
+          <img src={imgLink} width="280" height="300" alt="GalleryItem" />
+          <h5>{title}</h5>
+        {/* </Link> */}
         <strong>About this:</strong>
-        <p>{props.description}</p>
+        <p>{description}</p>
         <strong>Artist:</strong>
-        <p>{props.artist}</p>
+        <p>{artist}</p>
         <strong>Price:</strong>
-        <p>{props.price}</p>
+        <p>{price}</p>
         <strong>Products in stock:</strong>
-        <p>{props.stock}</p>
-
+        <p>{stock}</p>
 
         <div className="btnContainer">
-          <button class="btn btn-primary">Add to Cart</button>
+          <button className="btn btn-primary">Add to Cart</button>
         </div>
         <ItemCount />
       </div>

@@ -1,16 +1,8 @@
 import './App.css';
-import NavBar from './components/NavBar'
-// import ItemListContainer from './containers/ItemListContainer';
-import ItemDetailContainer from './containers/ItemDetailContainer';
+import Home from './pages/Home'
 
 const App = () => {
-  return (
-    <>
-      <NavBar />
-      {/* <ItemListContainer /> */}
-      <ItemDetailContainer />
-    </>
-  );
+  return <Home />
 }
 
 export default App;

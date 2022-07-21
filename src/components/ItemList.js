@@ -7,13 +7,15 @@ const ItemList = ({ listProps }) => {
       <h3 className="sectionTitle">Gallery</h3>
       <div className="ItemList">
         {
-          listProps.map(prod =>
+          listProps.length > 0
+          ? listProps.map(prod =>
             <Item
-              key={prod.id}
+              key={prod.idItem}
               imgLink={prod.imgLink}
               title={prod.title}
             />
           )
+          : <strong>Loading...</strong>
         }
       </div>
     </>

@@ -13,123 +13,135 @@ import txmx12 from '../images/txmx12.jpg'
 
 export const products = [
   {
-    id: 1,
+    idItem: 1,
     imgLink: txmx1,
     title: "Super Bunny",
     initial: 1,
     stock: 2,
     price: '$100.00',
     description: 'This doodle of a bunny doing a superhero pose over a superhero was made with a pale rose and yellow palette with a funny phrase',
-    artist: 'Rodolfo Paras (Tex-Mex Doodles)'
+    artist: 'Rodolfo Paras (Tex-Mex Doodles)',
+    categoryId: [1, 2, 3] 
   },
   {
-    id: 2,
+    idItem: 2,
     imgLink: txmx2,
     title: "Tiana",
     initial: 1,
     stock: 4,
     price: '$150.00',
     description: "This work is representing a cat that lives in the artist's family, right after visiting the vet",
-    artist: 'Rodolfo Paras (Tex-Mex Doodles)'
+    artist: 'Rodolfo Paras (Tex-Mex Doodles)',
+    categoryId: [1] 
   },
   {
-    id: 3,
+    idItem: 3,
     imgLink: txmx3,
     title: "Music Rhinno",
     initial: 1,
     stock: 1,
     price: '$250.00',
     description: 'This is part of a series of musician animals. They are all part of the same band. In this doodle we can see the rhinno playing the ukulele',
-    artist: 'Rodolfo Paras (Tex-Mex Doodles)'
+    artist: 'Rodolfo Paras (Tex-Mex Doodles)',
+    categoryId: [1] 
   },
   {
-    id: 4,
+    idItem: 4,
     imgLink: txmx4,
     title: "Music Hippo",
     initial: 1,
     stock: 3,
     price: '$250.00',
     description: 'This is part of a series of musician animals. They are all part of the same band. In this doodle we can see the hippo playing the drums',
-    artist: 'Rodolfo Paras (Tex-Mex Doodles)'
+    artist: 'Rodolfo Paras (Tex-Mex Doodles)',
+    categoryId: [1] 
   },
   {
-    id: 5,
+    idItem: 5,
     imgLink: txmx5,
     title: "Believe in Yourself",
     initial: 1,
     stock: 5,
     price: '$100.00',
     description: 'In this doodle we can see a UFO abducting a cow with the phrase "Believe in yourself" making a reference for people that do not believe in aliens',
-    artist: 'Rodolfo Paras (Tex-Mex Doodles)'
+    artist: 'Rodolfo Paras (Tex-Mex Doodles)',
+    categoryId: [1, 3] 
   },
   {
-    id: 6,
+    idItem: 6,
     imgLink: txmx6,
     title: "Hiking Deer",
     initial: 1,
     stock: 4,
     price: '$175.00',
     description: "In this doodle we can see a deer doing some trekking, making a reference to the artist's hobbies",
-    artist: 'Rodolfo Paras (Tex-Mex Doodles)'
+    artist: 'Rodolfo Paras (Tex-Mex Doodles)',
+    categoryId: [1] 
   },
   {
-    id: 7,
+    idItem: 7,
     imgLink: txmx7,
     title: "Bunny Picnic",
     initial: 1,
     stock: 3,
     price: '$200.00',
     description: 'A couple of bunnies having a picnic besides the road',
-    artist: 'Rodolfo Paras (Tex-Mex Doodles)'
+    artist: 'Rodolfo Paras (Tex-Mex Doodles)',
+    categoryId: [1] 
   },
   {
-    id: 8,
+    idItem: 8,
     imgLink: txmx8,
     title: "Vacation Dracula",
     initial: 1,
     stock: 3,
     price: '$80.00',
     description: 'Dracula relaxing and having some vacations floating inside his coffin and drinking a cocktail from a skull',
-    artist: 'Rodolfo Paras (Tex-Mex Doodles)'
+    artist: 'Rodolfo Paras (Tex-Mex Doodles)',
+    categoryId: [3] 
   },
   {
-    id: 9,
+    idItem: 9,
     imgLink: txmx9,
     title: "Riding a Pidgeon",
     initial: 1,
     stock: 5,
     price: '$120.00',
     description: 'A little girl riding a pidgeon in the desert with some stars in the background',
-    artist: 'Rodolfo Paras (Tex-Mex Doodles)'
+    artist: 'Rodolfo Paras (Tex-Mex Doodles)',
+    categoryId: [1,2] 
   },
   {
-    id: 10,
+    idItem: 10,
     imgLink: txmx10,
     title: "Flower Girl",
     initial: 1,
     stock: 2,
     price: '$180.00',
     description: 'A little girl  with a magic wand and a white witch hat with some red flowers in the back  ',
-    artist: 'Rodolfo Paras (Tex-Mex Doodles)'
+    artist: 'Rodolfo Paras (Tex-Mex Doodles)',
+    categoryId: [2] 
   },
   {
-    id: 11,
+    idItem: 11,
     imgLink: txmx11,
     title: "Grandma's Dog",
     initial: 1,
     stock: 2,
     price: '$200.00',
     description: 'Grandma took his dog out for a walk but the dog is so big and strong that she can not handle him',
-    artist: 'Rodolfo Paras (Tex-Mex Doodles)'
+    artist: 'Rodolfo Paras (Tex-Mex Doodles)',
+    categoryId: [1, 2, 3] 
   },
   {
-    id: 12,
+    idItem: 12,
     imgLink: txmx12,
     title: "Glasses Girl",
     initial: 1,
     stock: 4,
     price: '$150.00',
     description: 'A girl with yellow glasses with some flowers and nature in her back',
-    artist: 'Rodolfo Paras (Tex-Mex Doodles)'
+    artist: 'Rodolfo Paras (Tex-Mex Doodles)',
+    categoryId: [2] 
   }
 ]

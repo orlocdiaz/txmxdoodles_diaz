@@ -7,10 +7,11 @@ const ItemDetail = ({ descProps }) => {
       <h3 className="sectionTitle">Description</h3>
       <div className="ItemDetail">
         {
-          descProps.id
+          descProps.idItem
             ?
             <Item
-              key={descProps.id}
+              key={descProps.idItem}
+              idItem={descProps.idItem}
               imgLink={descProps.imgLink}
               title={descProps.title}
               description={descProps.description}
@@ -20,7 +21,7 @@ const ItemDetail = ({ descProps }) => {
             />
             :
             <div>
-            <strong>Cargando...</strong>
+            <strong>Loading...</strong>
             </div>
         }
       </div>

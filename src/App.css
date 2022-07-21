@@ -58,6 +58,10 @@
   align-items: center;
 }
 
+/* .item:hover{
+
+} */
+
 .modifyQuantity {
   padding: 0.5rem;
   display: flex;
