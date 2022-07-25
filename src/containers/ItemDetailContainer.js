@@ -10,7 +10,7 @@ const ItemDetailContainer = () => {
   const { idDetail } = useParams();
 
   useEffect(() => {
-      fetchProducts(2000, products.find(item => item.idItem === parseInt(idDetail)))
+      fetchProducts(1000, products.find(item => item.idItem === parseInt(idDetail)))
         .then(res => setDesc(res))
         .catch(err => console.log(err))
   }, [idDetail])

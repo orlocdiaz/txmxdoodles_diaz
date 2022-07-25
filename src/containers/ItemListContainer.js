@@ -10,11 +10,11 @@ const ItemListContainer = () => {
 
   useEffect(() => {
     if (idList === undefined) {
-      fetchProducts(2000, products)
+      fetchProducts(1000, products)
         .then(res => setList(res))
         .catch(err => console.log(err))
     } else {
-      fetchProducts(2000, products.filter(item => item.categoryId
+      fetchProducts(1000, products.filter(item => item.categoryId
           .find(catId => { return catId === parseInt(idList) }) === parseInt(idList)))
         .then(res => setList(res))
         .catch(err => console.log(err))
