@@ -1,8 +1,17 @@
-import React from 'react'
+import React, { useContext }  from 'react'
 import Item from '../components/Item'
 import ItemCount from './ItemCount'
+import { CartContext } from './CartContext';
+
 
 const ItemDetail = ({ descProps }) => {
+  const cartItems = useContext(CartContext)
+
+  const handleClick = (itemQuantity, setItemQuantity) => {
+    cartItems.addToCart(descProps, itemQuantity)
+    setItemQuantity(true)
+  }
+
   return (
     <>
       <h3 className="sectionTitle">Description</h3>
@@ -23,6 +32,7 @@ const ItemDetail = ({ descProps }) => {
               />
               <ItemCount
                 stockCount={descProps.stock}
+                handleClick={handleClick}
               />
             </>
             :

@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
-import AddToCart from './AddToCart';
 import { Link } from 'react-router-dom'
 
-const ItemCount = ({ stockCount }) => {
+const ItemCount = ({ stockCount, handleClick }) => {
   const [addedCart, setCart] = useState(0);
   const addOne = () => {
     if (addedCart < stockCount) {
@@ -15,12 +14,6 @@ const ItemCount = ({ stockCount }) => {
     }
   }
 
-  const handleClick = () => {
-    addedCart > 1 ?
-      alert(`${addedCart} productos se han añadido al carrito.`) :
-      alert(`${addedCart} producto se ha añadido al carrito.`)
-    setCart(true)
-  }
   return (
     <>
       {
@@ -31,7 +24,13 @@ const ItemCount = ({ stockCount }) => {
           </div>
           :
           <div className='buttonsCart'>
-            <AddToCart addedCart={addedCart} handleClick={handleClick} />
+            <div className="btnContainer">
+              {addedCart <= 0 ?
+                <button className="btn btn-dark" disabled>Add to Cart</button>
+                :
+                <button className="btn btn-primary" onClick={() => handleClick(addedCart, setCart)}>Add to Cart</button>
+              }
+            </div>
             <div className="modifyQuantity">
               <button className="btn btn-danger" onClick={removeOne} >-</button>
               {addedCart}
