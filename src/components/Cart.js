@@ -8,8 +8,7 @@ const Cart = () => {
   console.log(cartItemsQty.cartItemQty);
 
   const handleDelete = (it) => {
-    cartItems.cartList.filter(element => element.idItem !== it.idItem)
-    console.log("se borro");
+    cartItems.deleteFromCart(it)
   }
 
   return (
