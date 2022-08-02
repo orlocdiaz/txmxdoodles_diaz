@@ -93,6 +93,33 @@
   align-items: center;
 }
 
+.cartContainer {
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: grey;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartContainer h4 {
+  font-size: 2rem;
+  color: white;
+}
+
+.cartList {
+  margin: 1rem 2%;
+  padding: 1rem;
+  width: 96%;
+  border-radius: 1rem;
+  background-color: white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

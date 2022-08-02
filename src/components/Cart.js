@@ -3,35 +3,32 @@ import { CartContext } from './CartContext'
 
 const Cart = () => {
   const cartItems = useContext(CartContext)
-  const cartItemsQty = useContext(CartContext)
-  console.log(cartItems.cartList);
-  console.log(cartItemsQty.cartItemQty);
-
-  const handleDelete = (it) => {
-    cartItems.deleteFromCart(it)
-  }
 
   return (
     <>
-      <div>
+      <div className ='container cartContainer'>
         {
           cartItems.cartList.length > 0 ? cartItems.cartList.map(item => (
-            <div className="cartList" key={item.idItem}>
-              <img src={item.imgLink} width="280" height="300" alt="cartItem" />
-              <h5>{item.title}</h5>
-              <strong>Price:</strong>
-              <p>{item.price}</p>
-              <strong>Selected Items:</strong>
-              <p>{cartItemsQty.cartItemQty}</p>
+            <div className="cartList" key={item.itemID}>
+              <img src={item.itemImg} width="70" height="75" alt="cartItem" />
+              <h5>{item.itemTitle}</h5>
+              <strong>Selected Items: {item.itemQty}</strong>
+              <strong>Price (EA): {item.itemPrice}</strong>
               <div className="deleteButton">
-                <button className="btn btn-danger" onClick={() => handleDelete(item)}>Remove from Cart</button>
+                <button className="btn btn-danger" onClick={() => cartItems.deleteFromCart(item)}>Remove</button>
               </div>
             </div>
           ))
             :
             <>
-              <div>Empty Cart</div>
+              <h4>Your Cart is Empty</h4>
             </>
+        }
+        {
+          cartItems.cartList.length > 0 &&
+            <div className=''>
+              <button className="btn btn-danger" onClick={() => cartItems.emptyCart()}>Empty your Cart</button>
+            </div>
         }
       </div>
     </>
