@@ -28,6 +28,24 @@
   color: #61dafb;
 }
 
+.cartWidgetContainer{
+  width: auto;
+  position: relative;
+	display: inline-block;
+}
+
+.cartWidgetContainer p{
+  position: absolute;
+  top: -5px;
+  right: -7px;
+  padding: 0px 6px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px gray;
+  font-size: 14px;
+  color: white;
+  /* display: none; */
+}
+
 .ItemList{
   margin: 1rem;
   border-radius: 1rem;
@@ -70,6 +88,16 @@
 
 .buttonsCart button {
   margin: 0.5rem;
+}
+
+.buttonsCheckout {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.buttonsCheckout button{
+  margin: 0.5rem 1rem;
 }
 
 .modifyQuantity {
@@ -118,6 +146,22 @@
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+.totalPrice{
+  margin: 1rem;
+  padding: 1rem;
+  width: 50%;
+  border-radius: 1rem;
+  background-color: white;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.totalPrice button{
+  margin: 1rem;
 }
 
 @keyframes App-logo-spin {

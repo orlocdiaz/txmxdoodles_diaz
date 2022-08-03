@@ -18,9 +18,9 @@ const ItemCount = ({ stockCount, handleClick }) => {
     <>
       {
         quantityPerItem === true ?
-          <div className='buttonsCart'>
-            <Link to="/Cart"><button className="btn btn-primary">Checkout</button></Link>
+          <div className='buttonsCheckout'>
             <Link to="/"><button className="btn btn-dark">Gallery</button></Link>
+            <Link to="/Cart"><button className="btn btn-primary">Checkout</button></Link>
           </div>
           :
           <div className='buttonsCart'>

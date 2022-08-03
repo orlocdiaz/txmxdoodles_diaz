@@ -25,7 +25,7 @@ export const products = [
     imgLink: txmx1,
     title: "Super Bunny",
     stock: 2,
-    price: '$100.00',
+    price: 100,
     description: 'This doodle of a bunny doing a superhero pose over a superhero was made with a pale rose and yellow palette with a funny phrase',
     artist: 'Rodolfo Paras (Tex-Mex Doodles)',
     categoryId: [1, 2, 3] 
@@ -35,7 +35,7 @@ export const products = [
     imgLink: txmx2,
     title: "Tiana",
     stock: 4,
-    price: '$150.00',
+    price: 150,
     description: "This work is representing a cat that lives in the artist's family, right after visiting the vet",
     artist: 'Rodolfo Paras (Tex-Mex Doodles)',
     categoryId: [1] 
@@ -45,7 +45,7 @@ export const products = [
     imgLink: txmx3,
     title: "Music Rhinno",
     stock: 1,
-    price: '$250.00',
+    price: 250,
     description: 'This is part of a series of musician animals. They are all part of the same band. In this doodle we can see the rhinno playing the ukulele',
     artist: 'Rodolfo Paras (Tex-Mex Doodles)',
     categoryId: [1] 
@@ -55,7 +55,7 @@ export const products = [
     imgLink: txmx4,
     title: "Music Hippo",
     stock: 2,
-    price: '$250.00',
+    price: 250,
     description: 'This is part of a series of musician animals. They are all part of the same band. In this doodle we can see the hippo playing the drums',
     artist: 'Rodolfo Paras (Tex-Mex Doodles)',
     categoryId: [1] 
@@ -65,7 +65,7 @@ export const products = [
     imgLink: txmx5,
     title: "Believe in Yourself",
     stock: 5,
-    price: '$100.00',
+    price: 100,
     description: 'In this doodle we can see a UFO abducting a cow with the phrase "Believe in yourself" making a reference for people that do not believe in aliens',
     artist: 'Rodolfo Paras (Tex-Mex Doodles)',
     categoryId: [1, 3] 
@@ -75,7 +75,7 @@ export const products = [
     imgLink: txmx6,
     title: "Hiking Deer",
     stock: 4,
-    price: '$175.00',
+    price: 175,
     description: "In this doodle we can see a deer doing some trekking, making a reference to the artist's hobbies",
     artist: 'Rodolfo Paras (Tex-Mex Doodles)',
     categoryId: [1] 
@@ -85,7 +85,7 @@ export const products = [
     imgLink: txmx7,
     title: "Bunny Picnic",
     stock: 3,
-    price: '$200.00',
+    price: 200,
     description: 'A couple of bunnies having a picnic besides the road',
     artist: 'Rodolfo Paras (Tex-Mex Doodles)',
     categoryId: [1] 
@@ -95,7 +95,7 @@ export const products = [
     imgLink: txmx8,
     title: "Vacation Dracula",
     stock: 3,
-    price: '$80.00',
+    price: 80,
     description: 'Dracula relaxing and having some vacations floating inside his coffin and drinking a cocktail from a skull',
     artist: 'Rodolfo Paras (Tex-Mex Doodles)',
     categoryId: [3] 
@@ -105,7 +105,7 @@ export const products = [
     imgLink: txmx9,
     title: "Riding a Pidgeon",
     stock: 5,
-    price: '$120.00',
+    price: 120,
     description: 'A little girl riding a pidgeon in the desert with some stars in the background',
     artist: 'Rodolfo Paras (Tex-Mex Doodles)',
     categoryId: [1,2] 
@@ -115,7 +115,7 @@ export const products = [
     imgLink: txmx10,
     title: "Flower Girl",
     stock: 2,
-    price: '$180.00',
+    price: 180,
     description: 'A little girl  with a magic wand and a white witch hat with some red flowers in the back  ',
     artist: 'Rodolfo Paras (Tex-Mex Doodles)',
     categoryId: [2] 
@@ -125,7 +125,7 @@ export const products = [
     imgLink: txmx11,
     title: "Grandma's Dog",
     stock: 2,
-    price: '$200.00',
+    price: 200,
     description: 'Grandma took his dog out for a walk but the dog is so big and strong that she can not handle him',
     artist: 'Rodolfo Paras (Tex-Mex Doodles)',
     categoryId: [1, 2, 3] 
@@ -135,7 +135,7 @@ export const products = [
     imgLink: txmx12,
     title: "Glasses Girl",
     stock: 4,
-    price: '$150.00',
+    price: 150,
     description: 'A girl with yellow glasses with some flowers and nature in her back',
     artist: 'Rodolfo Paras (Tex-Mex Doodles)',
     categoryId: [2] 
@@ -145,7 +145,7 @@ export const products = [
     imgLink: txmx13,
     title: "Knife Crab",
     stock: 4,
-    price: '$200.00',
+    price: 200,
     description: 'A threatening crab with a knife. Part of The Crab Series',
     artist: 'Rodolfo Paras (Tex-Mex Doodles)',
     categoryId: [1, 3] 
@@ -155,7 +155,7 @@ export const products = [
     imgLink: txmx14,
     title: "Mad Crab",
     stock: 3,
-    price: '$200.00',
+    price: 200,
     description: 'This crab is mad because he is being captured. Part of The Crab Series',
     artist: 'Rodolfo Paras (Tex-Mex Doodles)',
     categoryId: [1, 2, 3] 
@@ -165,7 +165,7 @@ export const products = [
     imgLink: txmx15,
     title: "Fighting Crab",
     stock: 3,
-    price: '$200.00',
+    price: 200,
     description: 'A crab fighting with a seagull that is trying to eat him. Part of The Crab Series',
     artist: 'Rodolfo Paras (Tex-Mex Doodles)',
     categoryId: [1, 3] 
@@ -175,7 +175,7 @@ export const products = [
     imgLink: txmx16,
     title: "Birthday Crab",
     stock: 1,
-    price: '$200.00',
+    price: 200,
     description: 'This crab is celebrating his birthday with a big cupcake. Part of The Crab Series',
     artist: 'Rodolfo Paras (Tex-Mex Doodles)',
     categoryId: [1] 
@@ -185,7 +185,7 @@ export const products = [
     imgLink: txmx17,
     title: "a-MAIZE-ing",
     stock: 5,
-    price: '$250.00',
+    price: 250,
     description: 'A yellow corn with some good vibes for you!',
     artist: 'Rodolfo Paras (Tex-Mex Doodles)',
     categoryId: [3] 
@@ -195,7 +195,7 @@ export const products = [
     imgLink: txmx18,
     title: "Jimmy and the spider",
     stock: 1,
-    price: '$300.00',
+    price: 300,
     description: 'Jimmy is being rude to a spider so he got some payback from the spider',
     artist: 'Rodolfo Paras (Tex-Mex Doodles)',
     categoryId: [1, 2, 3] 
@@ -205,7 +205,7 @@ export const products = [
     imgLink: txmx19,
     title: "Squid vs Octopus",
     stock: 4,
-    price: '$100.00',
+    price: 100,
     description: 'Did you know that there is a difference between an octupus and a squid? Well there is, and they fight a lot bacause of it',
     artist: 'Rodolfo Paras (Tex-Mex Doodles)',
     categoryId: [1, 3] 
@@ -215,7 +215,7 @@ export const products = [
     imgLink: txmx20,
     title: "Music Armadillo",
     stock: 2,
-    price: '$250.00',
+    price: 250,
     description: 'This is part of a series of musician animals. They are all part of the same band. In this doodle we can see the armadillo playing the guitar',
     artist: 'Rodolfo Paras (Tex-Mex Doodles)',
     categoryId: [2] 
