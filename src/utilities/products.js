@@ -116,7 +116,7 @@ export const products = [
     title: "Flower Girl",
     stock: 2,
     price: 180,
-    description: 'A little girl  with a magic wand and a white witch hat with some red flowers in the back  ',
+    description: 'A little girl  with a magic wand and a white witch hat with some red flowers in the back',
     artist: 'Rodolfo Paras (Tex-Mex Doodles)',
     categoryId: [2] 
   },
