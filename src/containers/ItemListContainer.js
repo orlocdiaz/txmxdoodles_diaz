@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { db } from '../utilities/firebaseConfig';
-import { collection, getDocs } from "firebase/firestore";
 import ItemList from '../components/ItemList';
 import { useParams } from 'react-router-dom';
+import { firestoreFetchGallery } from '../utilities/firestoreFetch';
 /* import fetchProducts from '../utilities/fetchProducts'
 const { products } = require('../utilities/products') */
 
@@ -22,15 +21,8 @@ const ItemListContainer = () => {
             .then(res => setList(res))
             .catch(err => console.log(err))
         } */
-    const firestoreFetch = async () => {
-      const querySnapshot = await getDocs(collection(db, "products"));
-      const dataFromFirestore = querySnapshot.docs.map((doc) => ({
-        idItem: doc.id,
-        ...doc.data()
-      }))
-      return dataFromFirestore
-    }
-    firestoreFetch()
+
+    firestoreFetchGallery(idList)
       .then(res => setList(res))
       .catch(err => console.log(err))
   }, [idList])

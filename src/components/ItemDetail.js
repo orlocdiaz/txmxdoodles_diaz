@@ -30,7 +30,7 @@ const ItemDetail = ({ descProps }) => {
                 artist={descProps.artist}
                 price={descProps.price}
                 stock={descProps.stock}
-              />
+                />
               {
                 cartItems.cartList.find(item => item.itemID === descProps.idItem && item.itemQty >= descProps.stock) ?
                   <>

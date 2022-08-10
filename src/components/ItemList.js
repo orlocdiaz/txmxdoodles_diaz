@@ -13,7 +13,6 @@ const ItemList = ({ listProps }) => {
                 key={prod.idItem}
                 imgLink={prod.imgLink}
                 title={prod.title}
-                stock={prod.stock}
                 idItem={prod.idItem}
               />
             )
